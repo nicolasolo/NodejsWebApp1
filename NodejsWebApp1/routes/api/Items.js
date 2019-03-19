@@ -2,7 +2,7 @@
 const router = express.Router();
 
 
-const Item = require('../../models/Items');
+const Item = require('../../models/Item');
 
 
 //@route Get api/items
@@ -10,9 +10,7 @@ const Item = require('../../models/Items');
 router.get('/', (req, res) => {
     Item.find()
         .sort({ date: -1 })
-        .then(items => res.json(items))
-
-
+        .then(items => res.json(items));
 });
 
 //@route POST api/items

@@ -28,6 +28,37 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="client\node_modules\axios\dist\axios.js" />
+    <Compile Include="client\node_modules\axios\dist\axios.min.js" />
+    <Compile Include="client\node_modules\axios\index.js" />
+    <Compile Include="client\node_modules\axios\lib\adapters\http.js" />
+    <Compile Include="client\node_modules\axios\lib\adapters\xhr.js" />
+    <Compile Include="client\node_modules\axios\lib\axios.js" />
+    <Compile Include="client\node_modules\axios\lib\cancel\Cancel.js" />
+    <Compile Include="client\node_modules\axios\lib\cancel\CancelToken.js" />
+    <Compile Include="client\node_modules\axios\lib\cancel\isCancel.js" />
+    <Compile Include="client\node_modules\axios\lib\core\Axios.js" />
+    <Compile Include="client\node_modules\axios\lib\core\createError.js" />
+    <Compile Include="client\node_modules\axios\lib\core\dispatchRequest.js" />
+    <Compile Include="client\node_modules\axios\lib\core\enhanceError.js" />
+    <Compile Include="client\node_modules\axios\lib\core\InterceptorManager.js" />
+    <Compile Include="client\node_modules\axios\lib\core\settle.js" />
+    <Compile Include="client\node_modules\axios\lib\core\transformData.js" />
+    <Compile Include="client\node_modules\axios\lib\defaults.js" />
+    <Compile Include="client\node_modules\axios\lib\helpers\bind.js" />
+    <Compile Include="client\node_modules\axios\lib\helpers\btoa.js" />
+    <Compile Include="client\node_modules\axios\lib\helpers\buildURL.js" />
+    <Compile Include="client\node_modules\axios\lib\helpers\combineURLs.js" />
+    <Compile Include="client\node_modules\axios\lib\helpers\cookies.js" />
+    <Compile Include="client\node_modules\axios\lib\helpers\deprecatedMethod.js" />
+    <Compile Include="client\node_modules\axios\lib\helpers\isAbsoluteURL.js" />
+    <Compile Include="client\node_modules\axios\lib\helpers\isURLSameOrigin.js" />
+    <Compile Include="client\node_modules\axios\lib\helpers\normalizeHeaderName.js" />
+    <Compile Include="client\node_modules\axios\lib\helpers\parseHeaders.js" />
+    <Compile Include="client\node_modules\axios\lib\helpers\spread.js" />
+    <Compile Include="client\node_modules\axios\lib\utils.js" />
+    <Compile Include="client\node_modules\axios\node_modules\is-buffer\index.js" />
+    <Compile Include="client\node_modules\axios\node_modules\is-buffer\test\basic.js" />
     <Compile Include="client\node_modules\bootstrap\dist\js\bootstrap.bundle.js" />
     <Compile Include="client\node_modules\bootstrap\dist\js\bootstrap.bundle.min.js" />
     <Compile Include="client\node_modules\bootstrap\dist\js\bootstrap.js" />
@@ -18720,10 +18751,10 @@
     <Compile Include="config\keys.js">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="models\Items.js">
+    <Compile Include="models\Item.js">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="routes\api\Items.js">
+    <Compile Include="routes\api\items.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="server.js" />
@@ -19743,6 +19774,19 @@
     <Content Include="client\node_modules\aws4\LICENSE" />
     <Content Include="client\node_modules\aws4\package.json" />
     <Content Include="client\node_modules\aws4\README.md" />
+    <Content Include="client\node_modules\axios\CHANGELOG.md" />
+    <Content Include="client\node_modules\axios\dist\axios.map" />
+    <Content Include="client\node_modules\axios\dist\axios.min.map" />
+    <Content Include="client\node_modules\axios\lib\adapters\README.md" />
+    <Content Include="client\node_modules\axios\lib\core\README.md" />
+    <Content Include="client\node_modules\axios\lib\helpers\README.md" />
+    <Content Include="client\node_modules\axios\LICENSE" />
+    <Content Include="client\node_modules\axios\node_modules\is-buffer\LICENSE" />
+    <Content Include="client\node_modules\axios\node_modules\is-buffer\package.json" />
+    <Content Include="client\node_modules\axios\node_modules\is-buffer\README.md" />
+    <Content Include="client\node_modules\axios\package.json" />
+    <Content Include="client\node_modules\axios\README.md" />
+    <Content Include="client\node_modules\axios\UPGRADE_GUIDE.md" />
     <Content Include="client\node_modules\axobject-query\CHANGELOG.md" />
     <Content Include="client\node_modules\axobject-query\LICENSE" />
     <Content Include="client\node_modules\axobject-query\package.json" />
@@ -28610,6 +28654,16 @@
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="client\node_modules\axios\" />
+    <Folder Include="client\node_modules\axios\dist\" />
+    <Folder Include="client\node_modules\axios\lib\" />
+    <Folder Include="client\node_modules\axios\lib\adapters\" />
+    <Folder Include="client\node_modules\axios\lib\cancel\" />
+    <Folder Include="client\node_modules\axios\lib\core\" />
+    <Folder Include="client\node_modules\axios\lib\helpers\" />
+    <Folder Include="client\node_modules\axios\node_modules\" />
+    <Folder Include="client\node_modules\axios\node_modules\is-buffer\" />
+    <Folder Include="client\node_modules\axios\node_modules\is-buffer\test\" />
     <Folder Include="client\node_modules\bootstrap\" />
     <Folder Include="client\node_modules\bootstrap\dist\" />
     <Folder Include="client\node_modules\bootstrap\dist\css\" />
@@ -33348,6 +33402,7 @@
     <TypeScriptCompile Include="client\node_modules\array-flatten\array-flatten.d.ts" />
     <TypeScriptCompile Include="client\node_modules\autoprefixer\node_modules\postcss\lib\postcss.d.ts" />
     <TypeScriptCompile Include="client\node_modules\autoprefixer\node_modules\source-map\source-map.d.ts" />
+    <TypeScriptCompile Include="client\node_modules\axios\index.d.ts" />
     <TypeScriptCompile Include="client\node_modules\body-parser\node_modules\iconv-lite\lib\index.d.ts" />
     <TypeScriptCompile Include="client\node_modules\camel-case\camel-case.d.ts" />
     <TypeScriptCompile Include="client\node_modules\camelcase\index.d.ts" />
