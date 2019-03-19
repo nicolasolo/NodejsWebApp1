@@ -8,6 +8,8 @@ import store from './Store';
 import './App.css';
 import AppNavbar from './components/AppNav';
 import ShoppingList from './components/ShoppingList';
+import ItemModal from './components/ItemModal';
+import { Container } from 'reactstrap';
 
 class App extends Component {
   render() {
@@ -16,9 +18,11 @@ class App extends Component {
           <Provider store={store}>
         <div className="App">
             <AppNavbar />
-            <h1>Hello</h1>
-
-            <ShoppingList />
+                  <h1>Hello</h1>
+                  <Container>
+                  <ItemModal />
+                      <ShoppingList />
+                  </Container>
               </div>
           </Provider>
     );

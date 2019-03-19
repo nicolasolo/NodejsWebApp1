@@ -59,6 +59,19 @@
     <Compile Include="client\node_modules\bootstrap\js\src\tools\sanitizer.js" />
     <Compile Include="client\node_modules\bootstrap\js\src\tooltip.js" />
     <Compile Include="client\node_modules\bootstrap\js\src\util.js" />
+    <Compile Include="client\node_modules\redux\dist\redux.js" />
+    <Compile Include="client\node_modules\redux\dist\redux.min.js" />
+    <Compile Include="client\node_modules\redux\es\redux.js" />
+    <Compile Include="client\node_modules\redux\lib\redux.js" />
+    <Compile Include="client\node_modules\redux\src\applyMiddleware.js" />
+    <Compile Include="client\node_modules\redux\src\bindActionCreators.js" />
+    <Compile Include="client\node_modules\redux\src\combineReducers.js" />
+    <Compile Include="client\node_modules\redux\src\compose.js" />
+    <Compile Include="client\node_modules\redux\src\createStore.js" />
+    <Compile Include="client\node_modules\redux\src\index.js" />
+    <Compile Include="client\node_modules\redux\src\utils\actionTypes.js" />
+    <Compile Include="client\node_modules\redux\src\utils\isPlainObject.js" />
+    <Compile Include="client\node_modules\redux\src\utils\warning.js" />
     <Compile Include="client\src\actions\itemActions.js">
       <SubType>Code</SubType>
     </Compile>
@@ -18687,6 +18700,9 @@
     <Compile Include="client\node_modules\yargs\yargs.js" />
     <Compile Include="client\src\App.js" />
     <Compile Include="client\src\App.test.js" />
+    <Compile Include="client\src\components\ItemModal.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="client\src\components\ShoppingList.js">
       <SubType>Code</SubType>
     </Compile>
@@ -25524,6 +25540,11 @@
     <Content Include="client\node_modules\recursive-readdir\test\testdir\d.txt" />
     <Content Include="client\node_modules\recursive-readdir\test\testsymlinks\linkeddir\hi.docx" />
     <Content Include="client\node_modules\recursive-readdir\test\testsymlinks\linkedfile.wmf" />
+    <Content Include="client\node_modules\redux\CHANGELOG.md" />
+    <Content Include="client\node_modules\redux\es\redux.mjs" />
+    <Content Include="client\node_modules\redux\LICENSE.md" />
+    <Content Include="client\node_modules\redux\package.json" />
+    <Content Include="client\node_modules\redux\README.md" />
     <Content Include="client\node_modules\regenerate-unicode-properties\LICENSE-MIT.txt" />
     <Content Include="client\node_modules\regenerate-unicode-properties\package.json" />
     <Content Include="client\node_modules\regenerate-unicode-properties\README.md" />
@@ -28601,6 +28622,12 @@
     <Folder Include="client\node_modules\bootstrap\scss\mixins\" />
     <Folder Include="client\node_modules\bootstrap\scss\utilities\" />
     <Folder Include="client\node_modules\bootstrap\scss\vendor\" />
+    <Folder Include="client\node_modules\redux\" />
+    <Folder Include="client\node_modules\redux\dist\" />
+    <Folder Include="client\node_modules\redux\es\" />
+    <Folder Include="client\node_modules\redux\lib\" />
+    <Folder Include="client\node_modules\redux\src\" />
+    <Folder Include="client\node_modules\redux\src\utils\" />
     <Folder Include="client\src\components\" />
     <Folder Include="client\node_modules\" />
     <Folder Include="client\node_modules\%40babel\" />
@@ -33566,6 +33593,7 @@
     <TypeScriptCompile Include="client\node_modules\react-scripts\template-typescript\src\index.tsx" />
     <TypeScriptCompile Include="client\node_modules\react-scripts\template-typescript\src\serviceWorker.ts" />
     <TypeScriptCompile Include="client\node_modules\realpath-native\index.d.ts" />
+    <TypeScriptCompile Include="client\node_modules\redux\index.d.ts" />
     <TypeScriptCompile Include="client\node_modules\regexp-tree\index.d.ts" />
     <TypeScriptCompile Include="client\node_modules\regexpp\index.d.ts" />
     <TypeScriptCompile Include="client\node_modules\rxjs\add\observable\bindCallback.d.ts" />
