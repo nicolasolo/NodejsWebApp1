@@ -1,16 +1,26 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+
+import { Provider } from 'react-redux';
+import store from './Store';
+
 import './App.css';
 import AppNavbar from './components/AppNav';
+import ShoppingList from './components/ShoppingList';
 
 class App extends Component {
   render() {
-    return (
+      return (
+
+          <Provider store={store}>
         <div className="App">
             <AppNavbar />
             <h1>Hello</h1>
-      </div>
+
+            <ShoppingList />
+              </div>
+          </Provider>
     );
   }
 }

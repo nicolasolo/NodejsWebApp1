@@ -59,6 +59,12 @@
     <Compile Include="client\node_modules\bootstrap\js\src\tools\sanitizer.js" />
     <Compile Include="client\node_modules\bootstrap\js\src\tooltip.js" />
     <Compile Include="client\node_modules\bootstrap\js\src\util.js" />
+    <Compile Include="client\src\actions\itemActions.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="client\src\actions\types.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="client\src\components\AppNav.js">
       <SubType>Code</SubType>
     </Compile>
@@ -18681,8 +18687,20 @@
     <Compile Include="client\node_modules\yargs\yargs.js" />
     <Compile Include="client\src\App.js" />
     <Compile Include="client\src\App.test.js" />
+    <Compile Include="client\src\components\ShoppingList.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="client\src\index.js" />
+    <Compile Include="client\src\reducers\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="client\src\reducers\itemReducer.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="client\src\serviceWorker.js" />
+    <Compile Include="client\src\Store.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="config\keys.js">
       <SubType>Code</SubType>
     </Compile>
@@ -33224,6 +33242,8 @@
     <Folder Include="client\node_modules\yargs\locales\" />
     <Folder Include="client\public\" />
     <Folder Include="client\src\" />
+    <Folder Include="client\src\actions\" />
+    <Folder Include="client\src\reducers\" />
     <Folder Include="config\" />
     <Folder Include="models\" />
     <Folder Include="client\" />
